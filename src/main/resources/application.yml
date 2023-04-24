@@ -1,0 +1,29 @@
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8099
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+spring:
+  cloud:
+    nacos:
+      discovery:
+        namespace: 970707
+        server-addr: http://127.0.0.1:8848
+#    config:
+#      namespace: 970707
+#      server-addr: http://127.0.0.1:8848
+#      group: DEFAULT_GROUP
+#      file-extension: yaml
+
+#    application:
+#      name: application
+
